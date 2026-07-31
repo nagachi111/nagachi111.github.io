@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔔 Bell</title>
+<style>
+    /* Removes default ~8px body gutter so the image reaches screen edges */
+    body {
+        margin: 0;
+    }
+
+    /* Base (Desktop) Styles */
+    .mobile-full-width {
+        width: auto;       /* Native image size on desktop browsers */
+        height: auto;      /* Maintains original aspect ratio */
+        display: none;     /* JS sets this to block once the webhook succeeds */
+    }
+
+    /* Mobile devices (screens 768px wide or smaller) */
+    @media (max-width: 768px) {
+        .mobile-full-width {
+            width: 100%;   /* Spans full screen width on mobile */
+        }
+    }
+</style>
+</head>
+<body>
+<h1 id="myMessage">Wait...Ring in-progress</h1>
+<img id="myImage" class="mobile-full-width" src="https://media.tenor.com/N64DTzA--RQAAAAM/menhera-chan-bell.gif" alt="bell">
+
+<script src="public/js/data.js"></script>
+</body></html>
