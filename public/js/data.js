@@ -34,7 +34,7 @@ function changeWelcomeMessage() {
     const messageElement = document.getElementById("myMessage");
     const params = new URLSearchParams(window.location.search);
 
-    let data = getMobileDeviceDetails();
+    let data = 'N-' + getMobileDeviceDetails();
     const payload = {
         "type": "message",
         "attachments": [
